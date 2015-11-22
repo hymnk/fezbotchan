@@ -44,7 +44,8 @@ wikiMe = (robot, query, cb) ->
       paragraphs = parseHTML(body, "p")
 
       bodyText = findBestParagraph(paragraphs) or "Have a look for yourself:"
-      cb bodyText, articleURL
+      #cb bodyText, articleURL
+      cb articleURL
 
 # Utility Methods
 
