@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git://github.com/bouzuya/hubot-ping.git' ]
+2 info using npm@1.4.29
+3 info using node@v0.10.41
+4 warn deprecated This version of npm lacks support for important features,
+5 warn deprecated such as scoped packages, offered by the primary npm
+6 warn deprecated registry. Consider upgrading to at least npm@2, if not the
+7 warn deprecated latest stable version. To upgrade to npm@2, run:
+8 warn deprecated npm -g install npm@latest-2
+9 warn deprecated To upgrade to the latest stable version, run:
+10 warn deprecated npm -g install npm@latest
+11 warn deprecated (Depending on how Node.js was installed on your system, you
+12 warn deprecated may need to prefix the preceding commands with `sudo`, or if
+13 warn deprecated on Windows, run them from an Administrator prompt.)
+14 warn deprecated If you're running the version of npm bundled with
+15 warn deprecated Node.js 0.10 LTS, be aware that the next version of 0.10 LTS
+16 warn deprecated will be bundled with a version of npm@2, which has some small
+17 warn deprecated backwards-incompatible changes made to `npm run-script` and
+18 warn deprecated semver behavior.
+19 verbose readDependencies using package.json deps
+20 verbose cache add [ 'git://github.com/bouzuya/hubot-ping.git', null ]
+21 verbose cache add name=undefined spec="git://github.com/bouzuya/hubot-ping.git" args=["git://github.com/bouzuya/hubot-ping.git",null]
+22 verbose parsed url { protocol: 'git:',
+22 verbose parsed url   slashes: true,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: 'github.com',
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: 'github.com',
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '/bouzuya/hubot-ping.git',
+22 verbose parsed url   path: '/bouzuya/hubot-ping.git',
+22 verbose parsed url   href: 'git://github.com/bouzuya/hubot-ping.git' }
+23 silly lockFile 859d4668-ithub-com-bouzuya-hubot-ping-git git://github.com/bouzuya/hubot-ping.git
+24 verbose lock git://github.com/bouzuya/hubot-ping.git /root/.npm/859d4668-ithub-com-bouzuya-hubot-ping-git.lock
+25 verbose addRemoteGit [ 'git://github.com/bouzuya/hubot-ping.git', 'master' ]
+26 error git clone git://github.com/bouzuya/hubot-ping.git Initialized empty Git repository in /root/.npm/_git-remotes/git-github-com-bouzuya-hubot-ping-git-859d4668/
+26 error git clone git://github.com/bouzuya/hubot-ping.git
+26 error git clone git://github.com/bouzuya/hubot-ping.git github.com[0: 192.30.252.129]: errno=Connection refused
+26 error git clone git://github.com/bouzuya/hubot-ping.git fatal: unable to connect a socket (Connection refused)
+27 silly lockFile 859d4668-ithub-com-bouzuya-hubot-ping-git git://github.com/bouzuya/hubot-ping.git
+28 silly lockFile 859d4668-ithub-com-bouzuya-hubot-ping-git git://github.com/bouzuya/hubot-ping.git
+29 error Error: Command failed: github.com[0: 192.30.252.129]: errno=Connection refused
+29 error fatal: unable to connect a socket (Connection refused)
+29 error
+29 error     at ChildProcess.exithandler (child_process.js:658:15)
+29 error     at ChildProcess.emit (events.js:98:17)
+29 error     at maybeClose (child_process.js:766:16)
+29 error     at Socket.<anonymous> (child_process.js:979:11)
+29 error     at Socket.emit (events.js:95:17)
+29 error     at Pipe.close (net.js:466:12)
+30 error If you need help, you may report this *entire* log,
+30 error including the npm and node versions, at:
+30 error     <http://github.com/npm/npm/issues>
+31 error System Linux 2.6.32-573.8.1.el6.i686
+32 error command "/usr/bin/node" "/usr/bin/npm" "install" "git://github.com/bouzuya/hubot-ping.git"
+33 error cwd /home/ult-yamanaka/mybot
+34 error node -v v0.10.41
+35 error npm -v 1.4.29
+36 error code 128
+37 verbose exit [ 1, true ]
